@@ -33,10 +33,10 @@ public class Program{
     System.out.println("\n==== TESTE 5: seller update ====");
     seller = new Seller(13, "Damyres", "damyres@email.com", new Date(), 2200.0, dep);
     sellerDao.update(seller);
-    System.out.println("Update complete");
+    System.out.println("Update completed");
 
-//    System.out.println("\n==== TESTE 6: seller delete ====");
-//    sellerDao.deleteById(8);
-//    System.out.println("Deleted");
+    System.out.println("\n==== TESTE 6: seller delete ====");
+    sellerDao.deleteById(13);
+    System.out.println("Delete completed");
   }
 }
